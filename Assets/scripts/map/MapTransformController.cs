@@ -91,11 +91,42 @@ public class MapTransformController : MonoBehaviour
         Vector2 nextPosition = rb.position + movement;
 
         float rotationAmount = rotateInput * rotateSpeed * Time.fixedDeltaTime;
-        float nextRotation = rb.rotation + rotationAmount;
 
         rb.MovePosition(nextPosition);
         MovePlayerWithHorizontalMapPan(movement.x);
-        rb.MoveRotation(nextRotation);
+
+        if (!Mathf.Approximately(rotationAmount, 0f))
+        {
+            RotateMap(nextPosition, rotationAmount);
+        }
+    }
+
+    private void RotateMap(Vector2 mapPositionAfterPan, float rotationAmount)
+    {
+        ViewFixableObject fixedObject = ViewFixableObject.CurrentFixedObject;
+
+        if (fixedObject != null)
+        {
+            Vector2 nextPosition = RotatePointAroundPivot(mapPositionAfterPan, fixedObject.PivotPosition, rotationAmount);
+            rb.MovePosition(nextPosition);
+        }
+
+        rb.MoveRotation(rb.rotation + rotationAmount);
+    }
+
+    private Vector2 RotatePointAroundPivot(Vector2 point, Vector2 pivot, float angleDegrees)
+    {
+        float radians = angleDegrees * Mathf.Deg2Rad;
+        Vector2 offset = point - pivot;
+        float sin = Mathf.Sin(radians);
+        float cos = Mathf.Cos(radians);
+
+        Vector2 rotatedOffset = new Vector2(
+            offset.x * cos - offset.y * sin,
+            offset.x * sin + offset.y * cos
+        );
+
+        return pivot + rotatedOffset;
     }
 
     private void MovePlayerWithHorizontalMapPan(float horizontalMovement)

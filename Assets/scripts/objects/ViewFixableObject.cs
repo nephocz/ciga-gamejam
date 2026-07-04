@@ -4,6 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class ViewFixableObject : MonoBehaviour
 {
+    public static ViewFixableObject CurrentFixedObject { get; private set; }
+
     [SerializeField] private Transform mapRoot;
     [SerializeField] private Transform screenFixedRoot;
 
@@ -17,6 +19,7 @@ public class ViewFixableObject : MonoBehaviour
     private Rigidbody2D rb;
 
     public bool IsFixedToView => isFixedToView;
+    public Vector2 PivotPosition => transform.position;
 
     private void Awake()
     {
@@ -61,8 +64,14 @@ public class ViewFixableObject : MonoBehaviour
             return;
         }
 
+        if (CurrentFixedObject != null && CurrentFixedObject != this)
+        {
+            CurrentFixedObject.UnfixFromView();
+        }
+
         transform.SetParent(screenFixedRoot, true);
         isFixedToView = true;
+        CurrentFixedObject = this;
 
         RefreshVisual();
         StopPhysicsMotion();
@@ -81,6 +90,11 @@ public class ViewFixableObject : MonoBehaviour
 
         transform.SetParent(mapRoot, true);
         isFixedToView = false;
+
+        if (CurrentFixedObject == this)
+        {
+            CurrentFixedObject = null;
+        }
 
         RefreshVisual();
         StopPhysicsMotion();
@@ -112,6 +126,14 @@ public class ViewFixableObject : MonoBehaviour
         if (targetSprite != null)
         {
             spriteRenderer.sprite = targetSprite;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (CurrentFixedObject == this)
+        {
+            CurrentFixedObject = null;
         }
     }
 }
