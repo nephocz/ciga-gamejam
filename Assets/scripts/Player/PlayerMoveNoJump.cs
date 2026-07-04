@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 public class PlayerMoveNoJump : MonoBehaviour
 {
     [SerializeField] private GameModeController modeController;
-
     public float moveSpeed = 5f;
     public float jumpForce = 8f;
 
@@ -53,12 +52,13 @@ public class PlayerMoveNoJump : MonoBehaviour
             moveInput = 1f;
         }
 
-        if ((keyboard.spaceKey.wasPressedThisFrame || keyboard.wKey.wasPressedThisFrame || keyboard.upArrowKey.wasPressedThisFrame) && isGrounded)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            isGrounded = false;
-            StopMoveSFX();
-        }
+        // Jump input is temporarily disabled.
+        // if ((keyboard.spaceKey.wasPressedThisFrame || keyboard.wKey.wasPressedThisFrame || keyboard.upArrowKey.wasPressedThisFrame) && isGrounded)
+        // {
+        //     rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        //     isGrounded = false;
+        //     StopMoveSFX();
+        // }
 
         RefreshMoveSFX();
     }

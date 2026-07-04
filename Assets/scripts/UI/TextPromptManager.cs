@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -9,6 +10,16 @@ public class TextPromptManager : MonoBehaviour
     private class PromptEntry
     {
         public TextPromptEvent eventType;
+        [TextArea] public string message;
+        public PromptMessage[] followingMessages;
+        public float fadeInDuration = -1f;
+        public float holdDuration = -1f;
+        public float fadeOutDuration = -1f;
+    }
+
+    [Serializable]
+    private class PromptMessage
+    {
         [TextArea] public string message;
         public float fadeInDuration = -1f;
         public float holdDuration = -1f;
@@ -26,6 +37,7 @@ public class TextPromptManager : MonoBehaviour
 
     private static TextPromptManager current;
     private Coroutine showRoutine;
+    private readonly HashSet<TextPromptEvent> shownEvents = new HashSet<TextPromptEvent>();
 
     private void Awake()
     {
@@ -90,14 +102,20 @@ public class TextPromptManager : MonoBehaviour
 
     private void ShowPrompt(TextPromptEvent eventType)
     {
-        PromptEntry entry = GetPromptEntry(eventType);
-
-        if (entry == null || string.IsNullOrWhiteSpace(entry.message))
+        if (shownEvents.Contains(eventType))
         {
             return;
         }
 
-        ShowMessageInstance(entry.message, entry.fadeInDuration, entry.holdDuration, entry.fadeOutDuration);
+        PromptEntry entry = GetPromptEntry(eventType);
+
+        if (entry == null || !HasAnyMessage(entry))
+        {
+            return;
+        }
+
+        shownEvents.Add(eventType);
+        ShowPromptSequence(entry);
     }
 
     private void ShowMessageInstance(string message, float fadeInDuration, float holdDuration, float fadeOutDuration)
@@ -112,6 +130,8 @@ public class TextPromptManager : MonoBehaviour
             StopCoroutine(showRoutine);
         }
 
+        canvasGroup.alpha = 0f;
+
         showRoutine = StartCoroutine(ShowRoutine(
             message,
             ResolveDuration(fadeInDuration, defaultFadeInDuration),
@@ -119,15 +139,67 @@ public class TextPromptManager : MonoBehaviour
             ResolveDuration(fadeOutDuration, defaultFadeOutDuration)));
     }
 
+    private void ShowPromptSequence(PromptEntry entry)
+    {
+        if (promptText == null || canvasGroup == null)
+        {
+            return;
+        }
+
+        if (showRoutine != null)
+        {
+            StopCoroutine(showRoutine);
+        }
+
+        canvasGroup.alpha = 0f;
+
+        showRoutine = StartCoroutine(ShowSequenceRoutine(entry));
+    }
+
     private IEnumerator ShowRoutine(string message, float fadeInDuration, float holdDuration, float fadeOutDuration)
+    {
+        yield return ShowSingleMessageRoutine(message, fadeInDuration, holdDuration, fadeOutDuration);
+        showRoutine = null;
+    }
+
+    private IEnumerator ShowSequenceRoutine(PromptEntry entry)
+    {
+        if (!string.IsNullOrWhiteSpace(entry.message))
+        {
+            yield return ShowSingleMessageRoutine(
+                entry.message,
+                ResolveDuration(entry.fadeInDuration, defaultFadeInDuration),
+                ResolveDuration(entry.holdDuration, defaultHoldDuration),
+                ResolveDuration(entry.fadeOutDuration, defaultFadeOutDuration));
+        }
+
+        if (entry.followingMessages != null)
+        {
+            foreach (PromptMessage promptMessage in entry.followingMessages)
+            {
+                if (promptMessage == null || string.IsNullOrWhiteSpace(promptMessage.message))
+                {
+                    continue;
+                }
+
+                yield return ShowSingleMessageRoutine(
+                    promptMessage.message,
+                    ResolveDuration(promptMessage.fadeInDuration, defaultFadeInDuration),
+                    ResolveDuration(promptMessage.holdDuration, defaultHoldDuration),
+                    ResolveDuration(promptMessage.fadeOutDuration, defaultFadeOutDuration));
+            }
+        }
+
+        showRoutine = null;
+    }
+
+    private IEnumerator ShowSingleMessageRoutine(string message, float fadeInDuration, float holdDuration, float fadeOutDuration)
     {
         promptText.text = message;
 
         yield return FadeCanvasGroup(1f, fadeInDuration);
         yield return Wait(holdDuration);
         yield return FadeCanvasGroup(0f, fadeOutDuration);
-
-        showRoutine = null;
     }
 
     private IEnumerator FadeCanvasGroup(float targetAlpha, float duration)
@@ -173,6 +245,29 @@ public class TextPromptManager : MonoBehaviour
         }
 
         return null;
+    }
+
+    private bool HasAnyMessage(PromptEntry entry)
+    {
+        if (!string.IsNullOrWhiteSpace(entry.message))
+        {
+            return true;
+        }
+
+        if (entry.followingMessages == null)
+        {
+            return false;
+        }
+
+        foreach (PromptMessage promptMessage in entry.followingMessages)
+        {
+            if (promptMessage != null && !string.IsNullOrWhiteSpace(promptMessage.message))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private float ResolveDuration(float entryDuration, float defaultDuration)

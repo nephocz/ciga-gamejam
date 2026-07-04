@@ -54,25 +54,26 @@ public class MapTransformController : MonoBehaviour
             return;
         }
 
-        if (keyboard.wKey.isPressed)
-        {
-            moveInput.y += 1f;
-        }
-
-        if (keyboard.sKey.isPressed)
-        {
-            moveInput.y -= 1f;
-        }
-
-        if (keyboard.aKey.isPressed)
-        {
-            moveInput.x -= 1f;
-        }
-
-        if (keyboard.dKey.isPressed)
-        {
-            moveInput.x += 1f;
-        }
+        // Map translation input is temporarily disabled.
+        // if (keyboard.wKey.isPressed)
+        // {
+        //     moveInput.y += 1f;
+        // }
+        //
+        // if (keyboard.sKey.isPressed)
+        // {
+        //     moveInput.y -= 1f;
+        // }
+        //
+        // if (keyboard.aKey.isPressed)
+        // {
+        //     moveInput.x -= 1f;
+        // }
+        //
+        // if (keyboard.dKey.isPressed)
+        // {
+        //     moveInput.x += 1f;
+        // }
 
         if (keyboard.qKey.isPressed)
         {

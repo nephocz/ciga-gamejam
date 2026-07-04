@@ -5,6 +5,8 @@ public class ViewFixableShadowController : MonoBehaviour
     [SerializeField] private GameObject shadowObject;
     [SerializeField] private bool hideOnAwake = true;
 
+    private bool hasExternalVisibilityRequest;
+
     private void Awake()
     {
         if (shadowObject == null)
@@ -12,7 +14,7 @@ public class ViewFixableShadowController : MonoBehaviour
             shadowObject = gameObject;
         }
 
-        if (hideOnAwake)
+        if (hideOnAwake && !hasExternalVisibilityRequest)
         {
             SetVisible(false);
         }
@@ -20,6 +22,8 @@ public class ViewFixableShadowController : MonoBehaviour
 
     public void SetVisible(bool visible)
     {
+        hasExternalVisibilityRequest = true;
+
         if (shadowObject == null)
         {
             shadowObject = gameObject;
