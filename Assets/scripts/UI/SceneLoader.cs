@@ -18,6 +18,11 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("Level_01");
     }
 
+    public void LoadLevel001()
+    {
+        SceneManager.LoadScene("Level_001");
+    }
+
     public void LoadLevel02()
     {
         SceneManager.LoadScene("Level_02");
