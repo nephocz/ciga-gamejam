@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: b3341ffec53b9cf489d2e56638eaa5b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6297309583166314096
+    second: M_4_1_wedding_0
+  - first:
+      213: -3366789729730072778
+    second: M_4_1_wedding_1
+  - first:
+      213: -1635443620897002624
+    second: M_4_1_wedding_2
+  - first:
+      213: -2209307662109746380
+    second: M_4_1_wedding_3
+  - first:
+      213: -826058113659829802
+    second: M_4_1_wedding_4
+  - first:
+      213: 9144694637395281198
+    second: M_4_1_wedding_5
+  - first:
+      213: 3240913740179030500
+    second: M_4_1_wedding_6
+  - first:
+      213: -430017271774356503
+    second: M_4_1_wedding_7
+  - first:
+      213: -3904972986597818642
+    second: M_4_1_wedding_8
+  - first:
+      213: -8471672802142960662
+    second: M_4_1_wedding_9
+  - first:
+      213: 7637910235305859699
+    second: M_4_1_wedding_10
+  - first:
+      213: -6308431350628432208
+    second: M_4_1_wedding_11
+  - first:
+      213: -7663182472468526460
+    second: M_4_1_wedding_12
+  - first:
+      213: 5580286182442257771
+    second: M_4_1_wedding_13
+  - first:
+      213: -2884579325260064039
+    second: M_4_1_wedding_14
+  - first:
+      213: -4351555749976060563
+    second: M_4_1_wedding_15
+  - first:
+      213: -4613176142276542671
+    second: M_4_1_wedding_16
+  - first:
+      213: -84925204614544867
+    second: M_4_1_wedding_17
+  - first:
+      213: 4780507457752082423
+    second: M_4_1_wedding_18
+  - first:
+      213: -186512844937858491
+    second: M_4_1_wedding_19
+  - first:
+      213: -6461515365064260045
+    second: M_4_1_wedding_20
+  - first:
+      213: 7347387651485992257
+    second: M_4_1_wedding_21
+  - first:
+      213: 5092489126668947124
+    second: M_4_1_wedding_22
+  - first:
+      213: 5705522676500166788
+    second: M_4_1_wedding_23
+  - first:
+      213: 9084643085386147938
+    second: M_4_1_wedding_24
+  - first:
+      213: -8260246351631864238
+    second: M_4_1_wedding_25
+  - first:
+      213: -4169013358269251922
+    second: M_4_1_wedding_26
+  - first:
+      213: -2666682361767734231
+    second: M_4_1_wedding_27
+  - first:
+      213: 2372850426611488656
+    second: M_4_1_wedding_28
+  - first:
+      213: 2555383851894927425
+    second: M_4_1_wedding_29
+  - first:
+      213: -8284371378652126054
+    second: M_4_1_wedding_30
+  - first:
+      213: -5209550349599743619
+    second: M_4_1_wedding_31
+  - first:
+      213: -4168148476851525577
+    second: M_4_1_wedding_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: M_4_1_wedding_0
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 21
+        width: 895
+        height: 977
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0769a4983b9846750800000000000000
+      internalID: 6297309583166314096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_1
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 655
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f610e2492c641d0800000000000000
+      internalID: -3366789729730072778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 473
+        width: 115
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b614611bcbd49e0800000000000000
+      internalID: -1635443620897002624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_3
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 630
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b56600366f651e0800000000000000
+      internalID: -2209307662109746380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_4
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 627
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d10a73b5804984f0800000000000000
+      internalID: -826058113659829802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_5
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 619
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e258d51725b78ee70800000000000000
+      internalID: 9144694637395281198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_6
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 517
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1cd0720e90afc20800000000000000
+      internalID: 3240913740179030500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_7
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 510
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb5b94d195480af0800000000000000
+      internalID: -430017271774356503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_8
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 465
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee375412cfbec9c0800000000000000
+      internalID: -3904972986597818642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_9
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 505
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae34ee6a8729e6a80800000000000000
+      internalID: -8471672802142960662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_10
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 432
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ad9b144ee4ff960800000000000000
+      internalID: 7637910235305859699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_11
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 410
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b6cadf2c13f378a0800000000000000
+      internalID: -6308431350628432208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_12
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 443
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a838f7428e6a590800000000000000
+      internalID: -7663182472468526460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_13
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 383
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6dcd71a7b8217d40800000000000000
+      internalID: 5580286182442257771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_14
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 414
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da1077036ae7f7d0800000000000000
+      internalID: -2884579325260064039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_15
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 316
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d4e56d91b2c93c0800000000000000
+      internalID: -4351555749976060563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 285
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13fbc418db4baffb0800000000000000
+      internalID: -4613176142276542671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_17
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 282
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d120972f9f842def0800000000000000
+      internalID: -84925204614544867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_18
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 272
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f72b616436c75240800000000000000
+      internalID: 4780507457752082423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_19
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 247
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5427e634e8f596df0800000000000000
+      internalID: -186512844937858491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_20
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 155
+        width: 102
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336cd9292061456a0800000000000000
+      internalID: -6461515365064260045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_21
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 234
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1450ae1142a27f560800000000000000
+      internalID: 7347387651485992257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_22
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 220
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be44a921e72ca640800000000000000
+      internalID: 5092489126668947124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_23
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 216
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4887ab625a61e2f40800000000000000
+      internalID: 5705522676500166788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_24
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 206
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26866afe0c2231e70800000000000000
+      internalID: 9084643085386147938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_25
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 183
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e24c535b5bd5d80800000000000000
+      internalID: -8260246351631864238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_26
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 178
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaeb0846070b426c0800000000000000
+      internalID: -4169013358269251922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_27
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 145
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924d80a458a0efad0800000000000000
+      internalID: -2666682361767734231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_28
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 17
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097df4f14ee0ee020800000000000000
+      internalID: 2372850426611488656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_29
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 14
+        width: 57
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14077f4031c867320800000000000000
+      internalID: 2555383851894927425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_30
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 23
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94e604af10080d80800000000000000
+      internalID: -8284371378652126054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_31
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 0
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d716894fe85f3b7b0800000000000000
+      internalID: -5209550349599743619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: M_4_1_wedding_32
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 4
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 738ed2a4b03c726c0800000000000000
+      internalID: -4168148476851525577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      M_4_1_wedding_0: 6297309583166314096
+      M_4_1_wedding_1: -3366789729730072778
+      M_4_1_wedding_10: 7637910235305859699
+      M_4_1_wedding_11: -6308431350628432208
+      M_4_1_wedding_12: -7663182472468526460
+      M_4_1_wedding_13: 5580286182442257771
+      M_4_1_wedding_14: -2884579325260064039
+      M_4_1_wedding_15: -4351555749976060563
+      M_4_1_wedding_16: -4613176142276542671
+      M_4_1_wedding_17: -84925204614544867
+      M_4_1_wedding_18: 4780507457752082423
+      M_4_1_wedding_19: -186512844937858491
+      M_4_1_wedding_2: -1635443620897002624
+      M_4_1_wedding_20: -6461515365064260045
+      M_4_1_wedding_21: 7347387651485992257
+      M_4_1_wedding_22: 5092489126668947124
+      M_4_1_wedding_23: 5705522676500166788
+      M_4_1_wedding_24: 9084643085386147938
+      M_4_1_wedding_25: -8260246351631864238
+      M_4_1_wedding_26: -4169013358269251922
+      M_4_1_wedding_27: -2666682361767734231
+      M_4_1_wedding_28: 2372850426611488656
+      M_4_1_wedding_29: 2555383851894927425
+      M_4_1_wedding_3: -2209307662109746380
+      M_4_1_wedding_30: -8284371378652126054
+      M_4_1_wedding_31: -5209550349599743619
+      M_4_1_wedding_32: -4168148476851525577
+      M_4_1_wedding_4: -826058113659829802
+      M_4_1_wedding_5: 9144694637395281198
+      M_4_1_wedding_6: 3240913740179030500
+      M_4_1_wedding_7: -430017271774356503
+      M_4_1_wedding_8: -3904972986597818642
+      M_4_1_wedding_9: -8471672802142960662
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
