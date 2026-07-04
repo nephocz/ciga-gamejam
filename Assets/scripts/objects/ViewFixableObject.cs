@@ -13,6 +13,7 @@ public class ViewFixableObject : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite mapSprite;
     [SerializeField] private Sprite fixedSprite;
+    [SerializeField] private ViewFixableShadowController shadowController;
 
     [SerializeField] private bool isFixedToView;
 
@@ -36,6 +37,7 @@ public class ViewFixableObject : MonoBehaviour
         }
 
         RefreshVisual();
+        RefreshShadow();
     }
 
     public void Initialize(Transform mapRootTransform, Transform screenFixedRootTransform)
@@ -83,8 +85,11 @@ public class ViewFixableObject : MonoBehaviour
         CurrentFixedObject = this;
 
         RefreshVisual();
+        RefreshShadow();
         StopPhysicsMotion();
         Physics2D.SyncTransforms();
+        SFXManager.Play(SFXType.AnchorObject);
+        TextPromptManager.Show(TextPromptEvent.AnchorObject);
 
         Debug.Log($"{name} 已固定到视角。");
     }
@@ -106,8 +111,11 @@ public class ViewFixableObject : MonoBehaviour
         }
 
         RefreshVisual();
+        RefreshShadow();
         StopPhysicsMotion();
         Physics2D.SyncTransforms();
+        SFXManager.Play(SFXType.UnanchorObject);
+        TextPromptManager.Show(TextPromptEvent.UnanchorObject);
 
         Debug.Log($"{name} 已取消固定，重新跟随地图。");
     }
@@ -138,11 +146,26 @@ public class ViewFixableObject : MonoBehaviour
         }
     }
 
+    private void RefreshShadow()
+    {
+        if (shadowController == null)
+        {
+            return;
+        }
+
+        shadowController.SetVisible(isFixedToView);
+    }
+
     private void OnDisable()
     {
         if (CurrentFixedObject == this)
         {
             CurrentFixedObject = null;
+        }
+
+        if (shadowController != null)
+        {
+            shadowController.SetVisible(false);
         }
     }
 }
