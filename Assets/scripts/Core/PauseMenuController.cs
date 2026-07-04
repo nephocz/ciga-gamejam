@@ -39,6 +39,8 @@ public class PauseMenuController : MonoBehaviour
 
     public void OnContinueButton()
     {
+        SFXManager.Play(SFXType.ButtonClick);
+
         if (pauseManager != null)
         {
             pauseManager.ResumeGame();
@@ -52,12 +54,16 @@ public class PauseMenuController : MonoBehaviour
 
     public void OnExitButton()
     {
+        SFXManager.Play(SFXType.ButtonClick);
+        SFXManager.Play(SFXType.SceneTransition);
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenuScene");
     }
 
     public void OnRestartButton()
     {
+        SFXManager.Play(SFXType.ButtonClick);
+        SFXManager.Play(SFXType.SceneTransition);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

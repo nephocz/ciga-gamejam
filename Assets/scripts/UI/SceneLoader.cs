@@ -5,31 +5,38 @@ public class SceneLoader : MonoBehaviour
 {
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene("MainMenuScene");
+        LoadSceneWithSFX("MainMenuScene");
     }
 
     public void LoadLevelSelect()
     {
-        SceneManager.LoadScene("LevelSelectScene");
+        LoadSceneWithSFX("LevelSelectScene");
     }
 
     public void LoadLevel01()
     {
-        SceneManager.LoadScene("Level_01");
+        LoadSceneWithSFX("Level_01");
     }
 
     public void LoadLevel001()
     {
-        SceneManager.LoadScene("Level_001");
+        LoadSceneWithSFX("Level_001");
     }
 
     public void LoadLevel02()
     {
-        SceneManager.LoadScene("Level_02");
+        LoadSceneWithSFX("Level_02");
     }
 
     public void LoadSceneByName(string sceneName)
     {
+        LoadSceneWithSFX(sceneName);
+    }
+
+    private void LoadSceneWithSFX(string sceneName)
+    {
+        SFXManager.Play(SFXType.ButtonClick);
+        SFXManager.Play(SFXType.SceneTransition);
         SceneManager.LoadScene(sceneName);
     }
 
