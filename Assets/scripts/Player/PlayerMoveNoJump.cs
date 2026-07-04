@@ -1,0 +1,69 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerMoveNoJump : MonoBehaviour
+{
+    [SerializeField] private GameModeController modeController;
+
+    public float moveSpeed = 5f;
+    public float jumpForce = 8f;
+
+    private Rigidbody2D rb;
+    private bool isGrounded = true;
+    private float moveInput;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+
+        if (modeController == null)
+        {
+            modeController = FindAnyObjectByType<GameModeController>();
+        }
+    }
+
+    void Update()
+    {
+        if (modeController != null && !modeController.IsPlayerMoveMode)
+        {
+            moveInput = 0f;
+            return;
+        }
+
+        Keyboard keyboard = Keyboard.current;
+
+        if (keyboard == null)
+        {
+            moveInput = 0f;
+            return;
+        }
+
+        moveInput = 0f;
+
+        if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed)
+        {
+            moveInput = -1f;
+        }
+
+        if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed)
+        {
+            moveInput = 1f;
+        }
+
+        if ((keyboard.spaceKey.wasPressedThisFrame || keyboard.wKey.wasPressedThisFrame || keyboard.upArrowKey.wasPressedThisFrame) && isGrounded)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            isGrounded = false;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        isGrounded = true;
+    }
+}
