@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_02.unity
     guid: c90334c4907263645bcc6a6cf15e8f83
+  - enabled: 1
+    path: Assets/Scenes/PauseMenuScene.unity
+    guid: a345e0c95478d3348bd3de515a74cac7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
