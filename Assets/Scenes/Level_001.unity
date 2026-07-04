@@ -425,7 +425,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 954109509}
   promptEntries:
   - eventType: 0
-    message: test
+    message: "\u6D4B\u8BD51"
     fadeInDuration: 1
     holdDuration: 2
     fadeOutDuration: 1
@@ -749,10 +749,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: test
+  m_text: "\u6D4B\u8BD51"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: aa534732eb248f64e8edced6697286e8, type: 2}
+  m_sharedMaterial: {fileID: 8973795201442882804, guid: aa534732eb248f64e8edced6697286e8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
