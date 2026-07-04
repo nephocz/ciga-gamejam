@@ -1,41 +1,64 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenuController : MonoBehaviour
 {
+    [SerializeField] private Image backgroundImage;
+    [SerializeField] private Color backgroundColor = new Color(0f, 0f, 0f, 0.78431374f);
+
     private PauseManager pauseManager;
+
+    private void Awake()
+    {
+        ApplyBackgroundColor();
+    }
 
     private void Start()
     {
-        // 找到关卡中的 PauseManager（因为叠加场景后，原场景对象仍在）
-        pauseManager = FindObjectOfType<PauseManager>();
+        pauseManager = FindFirstObjectByType<PauseManager>();
     }
 
-    /// <summary> 继续游戏按钮回调 </summary>
+    private void ApplyBackgroundColor()
+    {
+        if (backgroundImage == null)
+        {
+            GameObject panel = GameObject.Find("Panel");
+
+            if (panel != null)
+            {
+                backgroundImage = panel.GetComponent<Image>();
+            }
+        }
+
+        if (backgroundImage != null)
+        {
+            backgroundImage.color = backgroundColor;
+        }
+    }
+
     public void OnContinueButton()
     {
         if (pauseManager != null)
+        {
             pauseManager.ResumeGame();
+        }
         else
         {
-            // 保底逻辑
             Time.timeScale = 1f;
             SceneManager.UnloadSceneAsync(gameObject.scene);
         }
     }
 
-    /// <summary> 退出游戏按钮回调 </summary>
     public void OnExitButton()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenuScene");
     }
 
-    /// <summary> 重新开始按钮回调 </summary>
     public void OnRestartButton()
     {
         Time.timeScale = 1f;
-        // 重新加载当前活动场景（即关卡本身）
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
