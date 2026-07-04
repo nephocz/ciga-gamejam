@@ -42,6 +42,15 @@ public class ViewFixableObject : MonoBehaviour
     {
         mapRoot = mapRootTransform;
         screenFixedRoot = screenFixedRootTransform;
+        // === 新增开始 ===
+        // 确保初始时物体跟随地图移动，且刚体为运动学（不受物理力影响，由父物体带动）
+        if (!isFixedToView && mapRoot != null)
+        {
+            transform.SetParent(mapRoot, true);
+            if (rb != null)
+                rb.isKinematic = true;   // 关闭物理模拟，完全由 Transform 控制位置
+        }
+        // === 新增结束 ===
     }
 
     public void ToggleFixedState()
