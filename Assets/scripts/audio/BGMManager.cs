@@ -76,9 +76,19 @@ public class BGMManager : MonoBehaviour
     {
         AudioClip targetClip = GetMusicForScene(sceneName);
 
-        if (audioSource.clip == targetClip && audioSource.isPlaying)
+        if (targetClip == null)
         {
-            StartFadeToVolume(volume);
+            return;
+        }
+
+        if (audioSource.clip == targetClip)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.volume = volume;
+                audioSource.Play();
+            }
+
             return;
         }
 
@@ -95,29 +105,11 @@ public class BGMManager : MonoBehaviour
         fadeRoutine = StartCoroutine(FadeToClip(targetClip));
     }
 
-    private void StartFadeToVolume(float targetVolume)
-    {
-        if (fadeRoutine != null)
-        {
-            StopCoroutine(fadeRoutine);
-        }
-
-        fadeRoutine = StartCoroutine(FadeVolume(targetVolume));
-    }
-
     private IEnumerator FadeToClip(AudioClip targetClip)
     {
         if (audioSource.isPlaying)
         {
             yield return FadeVolume(0f);
-        }
-
-        if (targetClip == null)
-        {
-            audioSource.Stop();
-            audioSource.clip = null;
-            fadeRoutine = null;
-            yield break;
         }
 
         audioSource.clip = targetClip;
