@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 8aaaad7ddd65205409750813eaeb4f8e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4654283967670258718
+    second: squ_3_0
+  - first:
+      213: -8246377282008167623
+    second: squ_3_1
+  - first:
+      213: -8084933460769421639
+    second: squ_3_2
+  - first:
+      213: -1420388396202231441
+    second: squ_3_3
+  - first:
+      213: 4444243617889474714
+    second: squ_3_4
+  - first:
+      213: 3983330826796043721
+    second: squ_3_5
+  - first:
+      213: 6429721914538867410
+    second: squ_3_6
+  - first:
+      213: 7773940635178336963
+    second: squ_3_7
+  - first:
+      213: -4484655183491618287
+    second: squ_3_8
+  - first:
+      213: -6965728204537329615
+    second: squ_3_9
+  - first:
+      213: -128275706949626615
+    second: squ_3_10
+  - first:
+      213: -1149262853750796303
+    second: squ_3_11
+  - first:
+      213: -2456412238704681980
+    second: squ_3_12
+  - first:
+      213: 2716666819424401784
+    second: squ_3_13
+  - first:
+      213: 2953008370459450783
+    second: squ_3_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: squ_3_0
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 528
+        width: 1343
+        height: 1489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c08c0fb96579040800000000000000
+      internalID: 4654283967670258718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_1
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 2003
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b4d0e9d8bfe8d80800000000000000
+      internalID: -8246377282008167623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_2
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2005
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b64b2e6adb8ccf80800000000000000
+      internalID: -8084933460769421639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_3
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 2004
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6977497744c94ce0800000000000000
+      internalID: -1420388396202231441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2000
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98599b16002dad30800000000000000
+      internalID: 4444243617889474714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_5
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 2001
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd8a0a4842a74730800000000000000
+      internalID: 3983330826796043721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_6
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 2004
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da32a0e306fa3950800000000000000
+      internalID: 6429721914538867410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_7
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 2009
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c287c0d1d592eb60800000000000000
+      internalID: 7773940635178336963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_8
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 2003
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a2edf0fdd43c1c0800000000000000
+      internalID: -4484655183491618287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_9
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 2007
+        width: 28
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13802ae9a13c45f90800000000000000
+      internalID: -6965728204537329615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_10
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 2004
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90594f59ce5483ef0800000000000000
+      internalID: -128275706949626615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_11
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 970
+        width: 902
+        height: 1056
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ffc1a8068ffc00f0800000000000000
+      internalID: -1149262853750796303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_12
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1991
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40cd512651219edd0800000000000000
+      internalID: -2456412238704681980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_13
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 938
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879b1e8241a83b520800000000000000
+      internalID: 2716666819424401784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_3_14
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 820
+        width: 7
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d9dfb97713bf820800000000000000
+      internalID: 2953008370459450783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      squ_3_0: 4654283967670258718
+      squ_3_1: -8246377282008167623
+      squ_3_10: -128275706949626615
+      squ_3_11: -1149262853750796303
+      squ_3_12: -2456412238704681980
+      squ_3_13: 2716666819424401784
+      squ_3_14: 2953008370459450783
+      squ_3_2: -8084933460769421639
+      squ_3_3: -1420388396202231441
+      squ_3_4: 4444243617889474714
+      squ_3_5: 3983330826796043721
+      squ_3_6: 6429721914538867410
+      squ_3_7: 7773940635178336963
+      squ_3_8: -4484655183491618287
+      squ_3_9: -6965728204537329615
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

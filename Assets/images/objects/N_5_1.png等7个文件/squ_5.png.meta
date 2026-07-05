@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: c89b46fca1df15d4fae84f99dd998cf0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4620696094591270473
+    second: squ_5_0
+  - first:
+      213: 8183994892504789060
+    second: squ_5_1
+  - first:
+      213: 9159257377807750808
+    second: squ_5_2
+  - first:
+      213: 2207657423588072035
+    second: squ_5_3
+  - first:
+      213: 3476910102991543163
+    second: squ_5_4
+  - first:
+      213: -7496598447623841626
+    second: squ_5_5
+  - first:
+      213: -4764710217713463506
+    second: squ_5_6
+  - first:
+      213: 8608936598047957549
+    second: squ_5_7
+  - first:
+      213: 6222102853144055497
+    second: squ_5_8
+  - first:
+      213: 1793257133347605305
+    second: squ_5_9
+  - first:
+      213: 268914378802548619
+    second: squ_5_10
+  - first:
+      213: 1547286009488567727
+    second: squ_5_11
+  - first:
+      213: -1705559245415630523
+    second: squ_5_12
+  - first:
+      213: -2125646272829968650
+    second: squ_5_13
+  - first:
+      213: -845758776971087642
+    second: squ_5_14
+  - first:
+      213: -7314228016563226034
+    second: squ_5_15
+  - first:
+      213: 1801063069227895841
+    second: squ_5_16
+  - first:
+      213: 9097733841156720393
+    second: squ_5_17
+  - first:
+      213: 3858695147178839803
+    second: squ_5_18
+  - first:
+      213: 6666389656282555797
+    second: squ_5_19
+  - first:
+      213: 8389317804648773498
+    second: squ_5_20
+  - first:
+      213: -480456965499482851
+    second: squ_5_21
+  - first:
+      213: -3542772596738751607
+    second: squ_5_22
+  - first:
+      213: 5239223729326068556
+    second: squ_5_23
+  - first:
+      213: 1571116851226871642
+    second: squ_5_24
+  - first:
+      213: -3462146542506524053
+    second: squ_5_25
+  - first:
+      213: -8033348608048581135
+    second: squ_5_26
+  - first:
+      213: 52324104235734124
+    second: squ_5_27
+  - first:
+      213: 209748569389860885
+    second: squ_5_28
+  - first:
+      213: 6198223815565058417
+    second: squ_5_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: squ_5_0
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 2002
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94eb525dd92002040800000000000000
+      internalID: 4620696094591270473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_1
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2004
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 440fb5b7ef3639170800000000000000
+      internalID: 8183994892504789060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_2
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 2001
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8965b9aae083c1f70800000000000000
+      internalID: 9159257377807750808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2000
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a98b6eabc23ae10800000000000000
+      internalID: 2207657423588072035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_4
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 1991
+        width: 57
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b17c43157704030800000000000000
+      internalID: 3476910102991543163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_5
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1995
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8d2a93e6bb6f790800000000000000
+      internalID: -7496598447623841626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_6
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 2009
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2fc38f2d4950edb0800000000000000
+      internalID: -4764710217713463506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_7
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 2003
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22228c4936197770800000000000000
+      internalID: 8608936598047957549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_8
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 2007
+        width: 31
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce889d2499595650800000000000000
+      internalID: 6222102853144055497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_9
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1806
+        width: 992
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b8e189cdde2e810800000000000000
+      internalID: 1793257133347605305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_10
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 2010
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f4587e3306bb300800000000000000
+      internalID: 268914378802548619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_11
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 2001
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad6f718d60197510800000000000000
+      internalID: 1547286009488567727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_12
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1988
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5493e9917e2a458e0800000000000000
+      internalID: -1705559245415630523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_13
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 530
+        width: 1413
+        height: 1463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe26dd1aff2082e0800000000000000
+      internalID: -2125646272829968650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_14
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1986
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e038f49fd24344f0800000000000000
+      internalID: -845758776971087642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_15
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1984
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4af9821f54ae7a90800000000000000
+      internalID: -7314228016563226034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_16
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1984
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c476ba159aef810800000000000000
+      internalID: 1801063069227895841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_17
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1982
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90742370ab4a14e70800000000000000
+      internalID: 9097733841156720393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_18
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1985
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe4e18cac6dc8530800000000000000
+      internalID: 3858695147178839803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_19
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 1981
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5956f058216c38c50800000000000000
+      internalID: 6666389656282555797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_20
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1982
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7733f54818dc6470800000000000000
+      internalID: 8389317804648773498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_21
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1985
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d8a897fe21559f0800000000000000
+      internalID: -480456965499482851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_22
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1990
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983066bf71b85dec0800000000000000
+      internalID: -3542772596738751607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_23
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1984
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c431745293675b840800000000000000
+      internalID: 5239223729326068556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_24
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1988
+        width: 53
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57020ab37abdc510800000000000000
+      internalID: 1571116851226871642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_25
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1982
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b624d85101cf3ffc0800000000000000
+      internalID: -3462146542506524053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_26
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1982
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5b264e000d38090800000000000000
+      internalID: -8033348608048581135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_27
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1979
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64592ede74e9b000800000000000000
+      internalID: 52324104235734124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_28
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1976
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51801aa663d29e200800000000000000
+      internalID: 209748569389860885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squ_5_29
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 516
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1712f1d78b3840650800000000000000
+      internalID: 6198223815565058417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      squ_5_0: 4620696094591270473
+      squ_5_1: 8183994892504789060
+      squ_5_10: 268914378802548619
+      squ_5_11: 1547286009488567727
+      squ_5_12: -1705559245415630523
+      squ_5_13: -2125646272829968650
+      squ_5_14: -845758776971087642
+      squ_5_15: -7314228016563226034
+      squ_5_16: 1801063069227895841
+      squ_5_17: 9097733841156720393
+      squ_5_18: 3858695147178839803
+      squ_5_19: 6666389656282555797
+      squ_5_2: 9159257377807750808
+      squ_5_20: 8389317804648773498
+      squ_5_21: -480456965499482851
+      squ_5_22: -3542772596738751607
+      squ_5_23: 5239223729326068556
+      squ_5_24: 1571116851226871642
+      squ_5_25: -3462146542506524053
+      squ_5_26: -8033348608048581135
+      squ_5_27: 52324104235734124
+      squ_5_28: 209748569389860885
+      squ_5_29: 6198223815565058417
+      squ_5_3: 2207657423588072035
+      squ_5_4: 3476910102991543163
+      squ_5_5: -7496598447623841626
+      squ_5_6: -4764710217713463506
+      squ_5_7: 8608936598047957549
+      squ_5_8: 6222102853144055497
+      squ_5_9: 1793257133347605305
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
