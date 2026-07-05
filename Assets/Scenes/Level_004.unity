@@ -1125,26 +1125,18 @@ MonoBehaviour:
   canvasGroup: {fileID: 1933287280}
   promptEntries:
   - eventType: 0
-    message: "\u6211\u5F88\u540E\u6094\uFF0C\n\u6211\u4E0D\u8BE5\u8BA9\n\u4F60\u4E00\u4E2A\u4EBA\u53BB\u6CB3\u8FB9 "
-    followingMessages:
-    - message: "\n\u4F60\u6CA1\u542C\u6211\u7684\uFF0C\n\u6211\u77E5\u9053"
-      fadeInDuration: 0.5
-      holdDuration: 3
-      fadeOutDuration: 1
+    message: "\u6211\u7684\u4E16\u754C\u90FD\u662F\u4F60\uFF0C\u4F46\u4F60\u4E0D\u4E00\u6837 "
+    followingMessages: []
     fadeInDuration: 0.5
-    holdDuration: 4
+    holdDuration: 10
     fadeOutDuration: 1
   - eventType: 1
-    message: "\u6211\u77E5\u9053\uFF0C\n\u6211\u8BE5\u544A\u8BC9\u4F60\n\u6211\u6709\u591A\u7231\u4F60"
+    message: "\u4F60\u60F3\u51FA\u53BB\u770B\u770B\uFF0C\u6BC5\u7136\u51B3\u7136"
     followingMessages:
-    - message: "\u6211\u4E0D\u77E5\u9053\n\u6211\u5F88\u5BB3\u6015"
+    - message: "\u65B0\u5A5A\u5FEB\u4E50"
       fadeInDuration: 2
       holdDuration: 10
       fadeOutDuration: 3
-    - message: "\u6211\u6293\u4F4F\u4F60\u4E86"
-      fadeInDuration: 2
-      holdDuration: 10
-      fadeOutDuration: 1
     fadeInDuration: 2
     holdDuration: 3
     fadeOutDuration: 1
@@ -1287,7 +1279,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -190, y: -60}
+  m_AnchoredPosition: {x: 0, y: -10}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &498735103
