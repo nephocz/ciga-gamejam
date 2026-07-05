@@ -38,24 +38,39 @@ public class SceneTransitionManager : MonoBehaviour
 
     public static void LoadScene(string sceneName)
     {
-        if (instance == null || instance.fadeImage == null)
+        SceneTransitionManager manager = GetOrCreateInstance();
+
+        if (manager.fadeImage == null)
         {
             SceneManager.LoadScene(sceneName);
             return;
         }
 
-        instance.StartCoroutine(instance.LoadSceneRoutine(sceneName));
+        manager.StartCoroutine(manager.LoadSceneRoutine(sceneName));
     }
 
     public static void LoadScene(int buildIndex)
     {
-        if (instance == null || instance.fadeImage == null)
+        SceneTransitionManager manager = GetOrCreateInstance();
+
+        if (manager.fadeImage == null)
         {
             SceneManager.LoadScene(buildIndex);
             return;
         }
 
-        instance.StartCoroutine(instance.LoadSceneRoutine(buildIndex));
+        manager.StartCoroutine(manager.LoadSceneRoutine(buildIndex));
+    }
+
+    private static SceneTransitionManager GetOrCreateInstance()
+    {
+        if (instance != null)
+        {
+            return instance;
+        }
+
+        GameObject managerObject = new GameObject("SceneTransitionManager");
+        return managerObject.AddComponent<SceneTransitionManager>();
     }
 
     private IEnumerator LoadSceneRoutine(string sceneName)

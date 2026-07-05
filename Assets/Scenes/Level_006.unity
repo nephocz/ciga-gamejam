@@ -768,7 +768,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   completionDelay: 2
+  autoLoadNextNumberedLevel: 1
   nextLevelSceneName: Level_02
+  maxAutoLevelNumber: 6
 --- !u!61 &688113579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2138,26 +2140,34 @@ MonoBehaviour:
   canvasGroup: {fileID: 985158150}
   promptEntries:
   - eventType: 0
-    message: "\u6211\u5F88\u540E\u6094\uFF0C\n\u6211\u4E0D\u8BE5\u8BA9\n\u4F60\u4E00\u4E2A\u4EBA\u53BB\u6CB3\u8FB9 "
+    message: "\u522B\u8BEF\u4F1A\uFF0C\u6211\u4E00\u70B9\u4E5F\u4E0D\u602A\u4F60"
     followingMessages:
-    - message: "\n\u4F60\u6CA1\u542C\u6211\u7684\uFF0C\n\u6211\u77E5\u9053"
-      fadeInDuration: 0.5
-      holdDuration: 3
+    - message: "\u81F3\u5C11\u6700\u540E\uFF0C\u6211\u8FD8\u80FD\u5728\u8BB0\u5FC6\u91CC\n\u50CF\u4E00\u4F4D\u771F\u6B63\u7684\u8239\u957F\u4E00\u6837\u9A70\u9A8B"
+      fadeInDuration: 0
+      holdDuration: 4
+      fadeOutDuration: 1
+    - message: "\u6CA1\u6709\u4F60\uFF0C\n\u6211\u8BE5\u600E\u4E48\u56DE\u5FC6\u6211\u788C\u788C\u5306\u5306\u7684\u4E00\u751F"
+      fadeInDuration: 0
+      holdDuration: 4
+      fadeOutDuration: 1
+    - message: "\u6709\u9053\u662F\uFF0C\u751F\u8005\u662F\u6DF1\u6E0A\uFF0C\u6B7B\u8005\u662F\u592A\u9633"
+      fadeInDuration: 0
+      holdDuration: 4
+      fadeOutDuration: 1
+    - message: "\u522B\u7BA1\u8001\u5934\u5B50\u4E86\uFF0C\u597D\u597D\u5728\u4EBA\u95F4\u901B\u4E00\u901B"
+      fadeInDuration: 0
+      holdDuration: 4
+      fadeOutDuration: 1
+    - message: "\u2026\u2026 \u2026\u2026"
+      fadeInDuration: 0
+      holdDuration: 6
       fadeOutDuration: 1
     fadeInDuration: 0.5
     holdDuration: 4
     fadeOutDuration: 1
   - eventType: 1
-    message: "\u6211\u77E5\u9053\uFF0C\n\u6211\u8BE5\u544A\u8BC9\u4F60\n\u6211\u6709\u591A\u7231\u4F60"
-    followingMessages:
-    - message: "\u6211\u4E0D\u77E5\u9053\n\u6211\u5F88\u5BB3\u6015"
-      fadeInDuration: 2
-      holdDuration: 10
-      fadeOutDuration: 3
-    - message: "\u6211\u6293\u4F4F\u4F60\u4E86"
-      fadeInDuration: 2
-      holdDuration: 10
-      fadeOutDuration: 1
+    message: 
+    followingMessages: []
     fadeInDuration: 2
     holdDuration: 3
     fadeOutDuration: 1
@@ -2221,7 +2231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -190, y: -60}
+  m_AnchoredPosition: {x: -100, y: -60}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1792209391
@@ -2246,15 +2256,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u6D4B\u8BD51"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: aa534732eb248f64e8edced6697286e8, type: 2}
-  m_sharedMaterial: {fileID: 8973795201442882804, guid: aa534732eb248f64e8edced6697286e8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 248cf4efeaa5f2e439cbf095726f8c1c, type: 2}
+  m_sharedMaterial: {fileID: 4678448369523075120, guid: 248cf4efeaa5f2e439cbf095726f8c1c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2277,7 +2287,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535

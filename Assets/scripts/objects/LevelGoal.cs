@@ -1,20 +1,24 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Text.RegularExpressions;
+using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
 public class LevelGoal : MonoBehaviour
 {
-    [Header("通关设置")]
-    [Tooltip("触碰后等待多长时间切换到下一关（秒）")]
+    [Header("Level Complete")]
+    [Tooltip("Delay before loading the next level, in seconds.")]
     [SerializeField] private float completionDelay = 2f;
-    [Tooltip("下一关的场景名称，例如 Level_02")]
-    [SerializeField] private string nextLevelSceneName = "Level_02";
+    [Tooltip("Automatically load the next numbered level, for example Level_001 -> Level_002.")]
+    [SerializeField] private bool autoLoadNextNumberedLevel = true;
+    [Tooltip("Manual fallback scene name. Used when auto loading is disabled or current scene is not numbered.")]
+    [SerializeField] private string nextLevelSceneName = "Level_002";
+    [Tooltip("Auto loading stops after this level number.")]
+    [SerializeField] private int maxAutoLevelNumber = 6;
 
-    private bool triggered = false;
+    private bool triggered;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // 通过 Tag 判断是否为玩家，避免其他物体误触
         if (!triggered && other.CompareTag("Player"))
         {
             triggered = true;
@@ -26,55 +30,78 @@ public class LevelGoal : MonoBehaviour
 
     private IEnumerator CompleteLevelRoutine()
     {
-        // 1. 冻结所有输入，但保持物理（timeScale 仍为 1）
         DisableAllInputComponents();
 
-        // 2. 等待指定秒数（使用真实时间，不受 timeScale 影响）
         yield return new WaitForSecondsRealtime(completionDelay);
 
-        // 3. 检查下一关卡场景是否存在
-        if (!SceneExists(nextLevelSceneName))
+        string targetSceneName = GetNextLevelSceneName();
+
+        if (string.IsNullOrWhiteSpace(targetSceneName))
         {
-            Debug.LogWarning($"关卡场景 '{nextLevelSceneName}' 不存在于 Build Settings 中，无法加载！已恢复控制。");
+            Debug.LogWarning("No next level scene is available.");
             EnableAllInputComponents();
-            triggered = false; // 允许再次尝试
+            triggered = false;
             yield break;
         }
 
-        // 4. 加载下一关（自动卸载当前场景）
+        if (!SceneExists(targetSceneName))
+        {
+            Debug.LogWarning($"Level scene '{targetSceneName}' is not in Build Settings.");
+            EnableAllInputComponents();
+            triggered = false;
+            yield break;
+        }
+
         SFXManager.Play(SFXType.SceneTransition);
-        SceneTransitionManager.LoadScene(nextLevelSceneName);
+        SceneTransitionManager.LoadScene(targetSceneName);
     }
 
-    /// <summary>
-    /// 禁用所有输入相关组件（玩家移动、地图移动、暂停、模式切换、点击固定物体）
-    /// </summary>
+    private string GetNextLevelSceneName()
+    {
+        if (!autoLoadNextNumberedLevel)
+        {
+            return nextLevelSceneName;
+        }
+
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        Match match = Regex.Match(currentSceneName, @"^(.*?)(\d+)$");
+
+        if (!match.Success)
+        {
+            return nextLevelSceneName;
+        }
+
+        string prefix = match.Groups[1].Value;
+        string numberText = match.Groups[2].Value;
+        int currentLevelNumber = int.Parse(numberText);
+        int nextLevelNumber = currentLevelNumber + 1;
+
+        if (nextLevelNumber > maxAutoLevelNumber)
+        {
+            return string.Empty;
+        }
+
+        return $"{prefix}{nextLevelNumber.ToString().PadLeft(numberText.Length, '0')}";
+    }
+
     private void DisableAllInputComponents()
     {
-        // 玩家移动
         PlayerMoveNoJump playerMove = FindObjectOfType<PlayerMoveNoJump>();
         if (playerMove != null) playerMove.enabled = false;
 
-        // 地图移动/旋转
         MapTransformController mapCtrl = FindObjectOfType<MapTransformController>();
         if (mapCtrl != null) mapCtrl.enabled = false;
 
-        // 暂停管理器
         PauseManager pauseMgr = FindObjectOfType<PauseManager>();
         if (pauseMgr != null) pauseMgr.enabled = false;
 
-        // 模式切换（Tab键）
         GameModeController modeCtrl = FindObjectOfType<GameModeController>();
         if (modeCtrl != null) modeCtrl.enabled = false;
 
-        // 点击固定物体
         ViewFixableClickController clickCtrl = FindObjectOfType<ViewFixableClickController>();
         if (clickCtrl != null) clickCtrl.enabled = false;
     }
 
-    /// <summary>
-    /// 重新启用所有被禁用的输入组件（当关卡不存在时恢复控制）
-    /// </summary>
     private void EnableAllInputComponents()
     {
         PlayerMoveNoJump playerMove = FindObjectOfType<PlayerMoveNoJump>();
@@ -93,18 +120,19 @@ public class LevelGoal : MonoBehaviour
         if (clickCtrl != null) clickCtrl.enabled = true;
     }
 
-    /// <summary>
-    /// 检查场景名称是否存在于 Build Settings 的场景列表中
-    /// </summary>
     private bool SceneExists(string sceneName)
     {
         for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
         {
             string path = SceneUtility.GetScenePathByBuildIndex(i);
             string name = System.IO.Path.GetFileNameWithoutExtension(path);
+
             if (name == sceneName)
+            {
                 return true;
+            }
         }
+
         return false;
     }
 }
