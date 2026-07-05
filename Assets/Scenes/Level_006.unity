@@ -768,8 +768,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   completionDelay: 2
-  autoLoadNextNumberedLevel: 1
-  nextLevelSceneName: Level_02
+  autoLoadNextNumberedLevel: 0
+  nextLevelSceneName: EndLevel
   maxAutoLevelNumber: 6
 --- !u!61 &688113579
 BoxCollider2D:

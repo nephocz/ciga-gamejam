@@ -12,6 +12,11 @@ public class SceneLoader : MonoBehaviour
         LoadSceneWithSFX("LevelSelectScene");
     }
 
+    public void LoadCredits()
+    {
+        LoadSceneWithSFX("EndLevel");
+    }
+
     public void LoadLevel01()
     {
         LoadSceneWithSFX("Level_01");
