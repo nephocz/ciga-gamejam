@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
@@ -37,7 +36,7 @@ public class SceneLoader : MonoBehaviour
     {
         SFXManager.Play(SFXType.ButtonClick);
         SFXManager.Play(SFXType.SceneTransition);
-        SceneManager.LoadScene(sceneName);
+        SceneTransitionManager.LoadScene(sceneName);
     }
 
     public void QuitGame()

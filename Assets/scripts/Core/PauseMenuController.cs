@@ -57,7 +57,7 @@ public class PauseMenuController : MonoBehaviour
         SFXManager.Play(SFXType.ButtonClick);
         SFXManager.Play(SFXType.SceneTransition);
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenuScene");
+        SceneTransitionManager.LoadScene("MainMenuScene");
     }
 
     public void OnRestartButton()
@@ -65,6 +65,6 @@ public class PauseMenuController : MonoBehaviour
         SFXManager.Play(SFXType.ButtonClick);
         SFXManager.Play(SFXType.SceneTransition);
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneTransitionManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

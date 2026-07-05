@@ -43,7 +43,7 @@ public class LevelGoal : MonoBehaviour
 
         // 4. 加载下一关（自动卸载当前场景）
         SFXManager.Play(SFXType.SceneTransition);
-        SceneManager.LoadScene(nextLevelSceneName);
+        SceneTransitionManager.LoadScene(nextLevelSceneName);
     }
 
     /// <summary>
