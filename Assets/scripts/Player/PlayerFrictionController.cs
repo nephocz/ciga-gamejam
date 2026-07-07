@@ -1,3 +1,9 @@
+// ========================================================================
+// 文件功能：玩家摩擦力控制器
+// 根据当前地图（地板）的倾斜角度动态切换玩家的物理材质，以模拟在陡坡上打滑的效果。
+// 在组件面板中可配置倾斜阈值、正常/低摩擦材质，并支持手动指定地图刚体或自动查找。
+// ========================================================================
+
 using UnityEngine;
 
 public class PlayerFrictionController : MonoBehaviour
@@ -18,6 +24,14 @@ public class PlayerFrictionController : MonoBehaviour
 
     private Collider2D playerCollider;
 
+    /// <summary>
+    /// Unity 生命周期函数 Start，在脚本实例启用时调用。
+    /// 通过 GetComponent&lt;Collider2D&gt;() 获取玩家自身的碰撞体，用于后续修改物理材质。
+    /// 若 mapRigidbody 未在面板指定，则使用 FindObjectOfType&lt;MapTransformController&gt;() 查找场景中的地图控制器并获取其 Rigidbody2D。
+    /// 若未在面板指定 normalFrictionMaterial，则保留玩家碰撞体当前的 sharedMaterial 作为正常材质。
+    /// 可在组件面板中显示的字段：slideAngleThreshold（倾斜阈值）、normalFrictionMaterial（正常材质）、
+    /// lowFrictionMaterial（低摩擦材质）、mapRigidbody（地图刚体引用）。
+    /// </summary>
     private void Start()
     {
         playerCollider = GetComponent<Collider2D>();
@@ -40,6 +54,13 @@ public class PlayerFrictionController : MonoBehaviour
             normalFrictionMaterial = playerCollider.sharedMaterial;
     }
 
+    /// <summary>
+    /// Unity 生命周期函数 Update，每帧调用。
+    /// 通过 mapRigidbody.rotation 获取地图刚体的旋转角度，计算 0～90 度的有效倾斜角。
+    /// 利用 Mathf.Abs 和取模运算将角度标准化；若倾斜角大于 slideAngleThreshold，则使用 playerCollider.sharedMaterial 切换到 lowFrictionMaterial；
+    /// 否则切换回 normalFrictionMaterial。材质仅在需要改变时才重新赋值。
+    /// 可在组件面板中显示的字段：slideAngleThreshold、normalFrictionMaterial、lowFrictionMaterial、mapRigidbody。
+    /// </summary>
     private void Update()
     {
         if (playerCollider == null || mapRigidbody == null)
