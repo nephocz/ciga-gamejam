@@ -1198,7 +1198,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 0.22761622, y: 0.3874704, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1623895125}
@@ -1252,7 +1252,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7152930139536384079, guid: 8cafdf277aa5f7c49b2188b86b66a979, type: 3}
+  m_Sprite: {fileID: 5123207210628718506, guid: a4018df47ea638744b9cd7ee3a8c88ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1678,7 +1678,11 @@ Transform:
   m_GameObject: {fileID: 746586432}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 5.58, y: 7.43, z: 0}
+=======
+  m_LocalPosition: {x: 5.78, y: 7.87, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3399,10 +3403,19 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
+<<<<<<< Updated upstream
     - - {x: 1, y: 2.5}
       - {x: -1, y: 2.5}
       - {x: -1.7409444, y: -2.0208092}
       - {x: 1.8740528, y: -2.0208092}
+=======
+    - - {x: 0.5780758, y: 2.475615}
+      - {x: -0.4561519, y: 2.5}
+      - {x: -2.1067195, y: -0.92347884}
+      - {x: -0.20468259, y: -2.2646613}
+      - {x: 0.87426496, y: -1.752573}
+      - {x: 2.1422918, y: -0.8503239}
+>>>>>>> Stashed changes
   m_UseDelaunayMesh: 1
 --- !u!1 &1449848884
 GameObject:
@@ -4013,7 +4026,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
+<<<<<<< Updated upstream
   m_GravityScale: 10
+=======
+  m_GravityScale: 15
+>>>>>>> Stashed changes
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4023,7 +4040,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!212 &1623895124
 SpriteRenderer:

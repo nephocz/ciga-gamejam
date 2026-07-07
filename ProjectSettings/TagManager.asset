@@ -41,6 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< Updated upstream
+=======
+  - name: player
+    uniqueID: 1733135733
+    locked: 0
+  - name: tmp
+    uniqueID: 3045947727
+    locked: 0
+  - name: ui
+    uniqueID: 3345565237
+    locked: 0
+>>>>>>> Stashed changes
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []
